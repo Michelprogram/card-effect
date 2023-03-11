@@ -49,6 +49,11 @@ body {
     width: 50em;
     color: #213547;
     .card {
+      /*
+      Reflection but remove 3D effect
+      -webkit-box-reflect: below 0px
+        linear-gradient(transparent, rgba(193, 77, 77, 0.333));
+      */
       transform-style: preserve-3d;
       background: #edede9;
       width: 18em;
