@@ -5,12 +5,10 @@ const container = document.querySelector<HTMLElement>(
 ) as HTMLElement;
 const card = document.querySelector<HTMLElement>(".card") as HTMLElement;
 
-container.addEventListener("mouseenter", (e) => {
+container.addEventListener("mouseenter", (_) => {
   card.style.transition = "none";
   Tool.addPerspective();
 });
-
-
 
 container?.addEventListener("mousemove", (e) => {
   const [xAxis, yAxis] = [Tool.half(e.pageX, "x"), Tool.half(e.pageY, "y")];
